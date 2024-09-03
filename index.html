@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Center</title>
+    <link rel="icon" href="data:image/png;base64,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">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atomic+Age&family=Bevan:ital@0;1&family=Dancing+Script:wght@400..700&family=Grey+Qo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sevillana&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <img src="data:image/png;base64,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" alt=""class="log"><h3>Coffee Center</h3>
+        <ul class="order">
+            <i class="fa-solid fa-house" id="navicon1"></i><li class="list"><a href="#" title="home">Home</a></li>
+            <i class="fa-solid fa-address-card" id="navicon1"></i><li class="list"><a href="#about" title="about">About</a></li>
+            <i class="fa-regular fa-square-caret-down" id="navicon1"></i><li class="list"><a href="#ourmenu" title="Menu">Our Menu</a></li>
+            <i class="fa-solid fa-bars" id="navicon1"></i><li class="list"><a href="#product" title="Product">Product</a></li>
+            <i class="fa-solid fa-face-smile" id="navicon1"></i><li class="list"><a href="#review" title="Review">Review</a></li>
+            <i class="fa-solid fa-phone" id="navicon1"></i><li class="list"><a href="#contactus" title="Contact us">Contact Us</a></li>
+        </ul>
+        <ul id="icon">
+            <i class="fa-solid fa-magnifying-glass icon" id="navicon" title="search"></i>
+            <i class="fa-solid fa-cart-shopping icon" id="navicon" title="Cart"></i>
+        </ul>
+        <ul class="order1">
+            <li class="list11">Log in
+                <div class="login-dropdown">
+                    <form action="#" method="post">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+    
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                        
+                        <label for="password">Email:</label>
+                        <input type="email" id="password" name="password" required>
+    
+                        <button type="submit">Log in</button>
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    
+    
+
+    <!--Background Image-->
+    <div class="parent" id="home">
+        <div class="child">
+            <h2 class="h2">FRESH COFFEE IN <br><span style="color: goldenrod;">THE MORNING</span></h2>
+            <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Facere qui libero sint dolorem
+                impedit minima! Voluptate.</p>
+            <button class="btn">Get It Now</button>
+        </div>
+    </div>
+
+    <!--About us-->
+
+    <center><span style="color: goldenrod;">ABOUT</span> US</center>
+    <div class="parent9" id="about">
+        <img src="./images/coffee66.jpg" alt="" width="600px" height="400px" class="about9">
+        <div class="child9">
+            <h2>What Makes Our Coffee Special?</h2>
+            <p>Lorem, ipsum dolor amet consectetur dolor. elit. <br> Voluptatibus itaque tenetur lorem
+                velit,<br> dicta
+                odio sunt sed praesentium? Officia ,<br> fugiat minima aliquid expedita
+                non.</p>
+            <p>Lorem ipsum sit, amet consectetur elit. <br> Natus tenetur atque
+                obcaecati.</p>
+                <p>Lorem, ipsum dolor amet consectetur dolor. elit. <br> Voluptatibus itaque tenetur lorem
+                    velit,<br> dicta
+                    odio sunt sed praesentium? Officia ,<br> fugiat minima aliquid expedita
+                    non.</p>
+            <button class="btn">Learn More</button>
+        </div>
+    </div>
+
+    <!--Menu Section-->
+
+    <center>OUR <span style="color: goldenrod;"> MENU</span></center>
+    <div class="parent2" id="ourmenu">
+        <div class="divbox">
+            <div class="subdiv">
+                <img src="./images/coffee2.jpeg" alt="" class="img">
+                <h2 style="color: black;" align="center">Tasty And Healty <br><i class="fa-solid fa-indian-rupee-sign"
+                        style="font-size: 18px;"></i> 15.99 <del style="color:darkgray;"><small>
+                            20.00</small></del></h2>
+                <button class="btn1">Add to Cart</button>
+            </div>
+        </div>
+        <div class="divbox">
+            <div class="subdiv">
+                <img src="./images/coffee333.avif" alt="" class="img">
+                <h2 style="color: black;" align="center">Tasty And Healty <br><i class="fa-solid fa-indian-rupee-sign"
+                        style="font-size: 18px;"></i> 30.99 <del style="color:darkgray;"><small>
+                            40.00</small></del></h2>
+                            <button class="btn1">Add to Cart</button>
+            </div>
+        </div>
+        <div class="divbox">
+            <div class="subdiv">
+                <img src="./images/coffee222.jpeg" alt="" class="img">
+                <h2 style="color: black;" align="center">Tasty And Healty <br><i class="fa-solid fa-indian-rupee-sign"
+                        style="font-size: 18px;"></i> 20.00 <del style="color:darkgray;"><small>
+                            50.00</small></del></h2>
+                <button class="btn1">Add to Cart</button>
+            </div>
+        </div>
+        <div class="divbox">
+            <div class="subdiv">
+                <img src="./images/coffee55.jpg" alt="" class="img">
+                <h2 style="color: black;" align="center">Tasty And Healty <br><i class="fa-solid fa-indian-rupee-sign"
+                        style="font-size: 18px;"></i> 40.00 <del style="color:darkgray;"><small>
+                            60.00</small></del></h2>
+                <button class="btn1">Add to Cart</button>
+            </div>
+        </div>
+        <div class="divbox">
+            <div class="subdiv">
+                <img src="./images/coffee66.jpg" alt="" class="img">
+                <h2 style="color: black;" align="center">Tasty And Healty <br><i class="fa-solid fa-indian-rupee-sign"
+                        style="font-size: 18px;"></i> 35.18 <del style="color:darkgray;"><small>
+                            40.00</small></del></h2>
+                <button class="btn1">Add to Cart</button>
+            </div>
+        </div>
+        <div class="divbox">
+            <div class="subdiv">
+                <img src="./images/coffee77.jpg" alt="" class="img">
+                <h2 style="color: black;" align="center">Tasty And Healty <br><i class="fa-solid fa-indian-rupee-sign"
+                        style="font-size: 18px;"></i> 20.00<del style="color:darkgray;"><small>
+                            50.00</small></del></h2>
+                <button class="btn1">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Latest Prodect-->
+
+    <center>LATEST <span style="color: goldenrod;">PRODECTS</span></center>
+    <div class="prodectparent" id="product">
+    <div class="late">
+        <div class="sublate">
+            <img src="./images/packet2.png" alt="" width="300px" height="250px" class="img1">
+            <h2 align="center" style="color: black;">Fresh Coffee</h2>
+            <span style="color: goldenrod;" class="span"><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star-half-stroke"></i></span>
+            <h2 style="color: black;" align="center"><i class="fa-solid fa-indian-rupee-sign"
+                    style="font-size: 18px;"></i> 40.00 <del style="color:darkgray;"><small>
+                        60.00</small></del></h2>
+            <button class="btn2">Add To Cart</button>
+            <div class="mustparent">
+                <div class="parenticon">
+                    <div class="icon1">
+                        <i class="fa-solid fa-cart-shopping" style="color: black;"></i>
+                    </div>
+                </div>
+                <div class="parenticon">
+                    <div class="icon1">
+                        <i class="fa-solid fa-heart" style="color: black;"></i>
+                    </div>
+                </div>
+                <div class="parenticon">
+                    <div class="icon1">
+                        <i class="fa-solid fa-eye" style="color: black;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sublate">
+            <img src="./images/pa.png" alt="" width="300px" height="250px" class="img1">
+            <h2 align="center" style="color: black;">Fresh Coffee</h2>
+            <span style="color: goldenrod;" class="span"><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star-half-stroke"></i></span>
+            <h2 style="color: black;" align="center"><i class="fa-solid fa-indian-rupee-sign"
+                    style="font-size: 18px;"></i> 50.00 <del style="color:darkgray;"><small>
+                        60.00</small></del></h2>
+            <button class="btn2">Add To Cart</button>
+            <div class="mustparent">
+                <div class="parenticon">
+                    <div class="icon1">
+                        <i class="fa-solid fa-cart-shopping" style="color:black;"></i>
+                    </div>
+                </div>
+                <div class="parenticon">
+                    <div class="icon1">
+                        <i class="fa-solid fa-heart" style="color: black;"></i>
+                    </div>
+                </div>
+                <div class="parenticon">
+                    <div class="icon1">
+                        <i class="fa-solid fa-eye" style="color: black;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sublate">
+            <img src="./images/packet3.png" alt="" width="300px" height="250px" class="img1">
+            <h2 align="center" style="color: black;">Fresh Coffee</h2>
+            <span style="color: goldenrod;" class="span"><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star-half-stroke"></i></span>
+            <h2 style="color: black;" align="center"><i class="fa-solid fa-indian-rupee-sign"
+                    style="font-size: 18px;"></i> 30.00 <del style="color:darkgray;"><small>
+                        60.00</small></del></h2>
+            <button class="btn2">Add To Cart</button>
+            <div class="mustparent">
+                <div class="parenticon">
+                    <div class="icon1">
+                        <i class="fa-solid fa-cart-shopping" style="color: black;"></i>
+                    </div>
+                </div>
+                <div class="parenticon">
+                    <div class="icon1">
+                        <i class="fa-solid fa-heart" style="color: black;"></i>
+                    </div>
+                </div>
+                <div class="parenticon">
+                    <div class="icon1">
+                        <i class="fa-solid fa-eye" style="color: black;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--CUSTOMER'S REVIEW-->
+
+    <center class="rishi">CUSTOMER'S <span style="color: goldenrod;">REVIEW</span></center>
+    <div class="reviweparent" id="review">
+    <div class="wrapper">
+        <div class="kavya">
+            <img src="./images/laddy3.jpeg" alt="" class="img4" width="350px" height="450px">
+            <div class="content">
+                <h1>Jone Deo</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aliquam similique saepe unde,
+                    placeat doloribus.</p>
+            </div>
+        </div>
+        <div class="kavya">
+            <img src="./images/laddy4.jpeg" alt="" class="img4" width="350px" height="450px">
+            <div class="content">
+                <h1>Jone Deo</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aliquam similique saepe unde,
+                    placeat doloribus.</p>
+            </div>
+        </div>
+        <div class="kavya">
+            <img src="./images/laddy5.jpeg" alt="" class="img4" width="350px" height="450px">
+            <div class="content">
+                <h1>Jone Deo</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aliquam similique saepe unde,
+                    placeat doloribus.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--Contact us-->
+
+    <center><span style="color: goldenrod;">CONTACT</span> US</center>
+<div class="parent4" id="contactus">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.566269589264!2d78.16096537409348!3d11.219692250863114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babcfb5accea083%3A0x1b04eea5333f5daa!2sSDLC%20NAMAKKAL(Skill%20Development%20Learning%20Centre)!5e0!3m2!1sen!2sin!4v1724492040912!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <div class="child4">
+        <form action="">
+            <div class="input-container">
+                <i class="fa-solid fa-user contact-icon"></i> 
+                <input type="text" placeholder="Name"> 
+            </div>
+            <div class="input-container">
+                <i class="fa-solid fa-envelope contact-icon"></i> 
+                <input type="email" placeholder="Email"> 
+            </div>
+            <div class="input-container">
+                <i class="fa-solid fa-phone contact-icon"></i> 
+                <input type="number" placeholder="Number"> 
+            </div>
+            <button class="btn9">Contact Now</button>
+        </form>
+    </div> 
+    
+</div> <br>
+<!--Location-->
+<header>
+    <div class="header-main">
+        <div class="header-icon">
+        <i class="fa-solid fa-location-dot" id="h-icon" style="color: goldenrod;"></i>
+        <h4>Location:</h4>
+    <p>23A kottai colony<br>Namakkal 637001</p>
+    </div>
+    <div class="header-icon">
+        <i class="fa-solid fa-clock" id="h-icon" style="color: goldenrod;"></i>
+        <h4>Open Hours:</h4>
+        <p>Monday-Saturday:<br>10:00 AM - 10:00 PM</p>
+    </div>
+    <div class="header-icon">
+        <i class="fa-solid fa-envelope" id="h-icon" style="color: goldenrod;"></i>
+        <h4>Email:</h4>
+        <p>info@kavyarestaurant.com<br>contact@kavyarestaurant.com</p>
+    </div>
+    <div class="header-icon">
+        <i class="fa-solid fa-phone" id="h-icon" style="color: goldenrod;"></i>
+        <h4>Call:</h4>
+          <p>+91 7305422150<br>+91 9965212699</p>
+    </div>
+    </div> <br><br> <hr>
+</header>
+
+    <!--Footer-->
+  
+        <footer>
+            <div class="footer-content">
+                <h3>Coffee Center</h3>
+                <p class="p" style="color: black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ratione!</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Coffee Center. Designed by <span> N. Kavya</span></p>
+            </div>
+        </footer> <hr>
+    
+</body>
+
+</html>
